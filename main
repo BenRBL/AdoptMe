@@ -41,12 +41,12 @@ local function LoadScript()
         Library:Destroy()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Eazvy/Eazvy-Hub/main/Games/" .. tostring(game.PlaceId) .. ".lua"))()
     else
-        SendNotification("Eazvy Hub - Error", "The game you're currently in is not supported with Eazvy Hub.", "rbxassetid://161551681", 5) 
+        SendNotification("BenjaRBL Hub - Error", "The game you're currently in is not supported with Eazvy Hub.", "rbxassetid://161551681", 5) 
         return 
     end
 end 
 
-SendNotification("AZVY HUB", "is Loading please wait...", "rbxassetid://13328029686", 5)
+SendNotification("BenjaRBL HUB", "is Loading please wait...", "rbxassetid://13328029686", 5)
 
 --Config
 if isfile and not isfile("Eazvy-Hub/MainConfig.txt") and writefile then 
@@ -61,11 +61,11 @@ if Settings.AutoLoad then
 end 
 
 local Window = Library:MakeWindow({
-    Name = "Eazvy-Hub - Loader",
+    Name = "BenjaRBL-Hub - Loader",
     HidePremium = true, 
     SaveConfig = false, 
     IntroEnabled = false,
-    IntroText = "Eazvy Hub",
+    IntroText = "BenjaRBL Hub",
     IntroIcon = "rbxassetid://4562959390",
     Icon = "rbxassetid://10715004387",
 })
@@ -77,7 +77,7 @@ local Main = Window:MakeTab({
 })
 
 --Paragraphs 
-Main:AddParagraph("Important","Eazvy-Hub is not responsible for in-game bans. If you are banned permanently, do not beg the owner to help you or it'll result in a permanent blacklist.")
+Main:AddParagraph("Important","BenjaRBL-Hub is not responsible for in-game bans. If you are banned permanently, do not beg the owner to help you or it'll result in a permanent blacklist.")
 Main:AddParagraph("Supported Executors:","Synapse-X, KRNL, Scriptware, Valyse, Electron, Comet, Hydrogen, Oxygen-U, and Fluxus. Some things may not function properly this all based off of your Executor! If your executor is not supported some features may not be functional.")
 
 --Toggles / Buttons
